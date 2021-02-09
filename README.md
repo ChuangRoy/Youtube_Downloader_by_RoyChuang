@@ -31,7 +31,7 @@ Use youtube-dl base to download,BeautifulSoup , request of Urllib3 for web crawl
 
 ## Screen  Shots 
 
-![01](screen_shots\01.png)
+![01](screen_shots/01.png)
 
 
 
@@ -68,7 +68,7 @@ Use youtube-dl base to download,BeautifulSoup , request of Urllib3 for web crawl
 
 ## 螢幕截圖
 
-![01](screen_shots\01.png)
+![01](screen_shots/01.png)
 
 
 
