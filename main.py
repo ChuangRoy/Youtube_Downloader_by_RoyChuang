@@ -4,5 +4,6 @@ from tkinter import messagebox, ttk
 import threading
 
 
-GUI.main()
 
+
+GUI.main()
