@@ -1,43 +1,8 @@
-# Youtube_Downloader_by_RoyChuang
+# Youtube_Downloader
 
+製作人：Roy Chuang
 
-
-# English
-
-## Introdution
-
-Hi! I am a student . I'm 12 years old,And I Live in Taiwan.I interested at programming. Now , I'm learning Python . Because it is the most eazy Laguage.
-
-Now I'm making a project that can download videos and playlists on YouTube. But I'm not realy good at Python . I'm just new. 
-
-If you're good at Python . Can you help me to finish this project or make it better ,or  give me some option , Of course it is the best If you can join this project . Thank you very much !
-
-
-
-## Feature
-
-Use youtube-dl base to download,BeautifulSoup , request of Urllib3 for web crawler , And Python Default Tkinter GUI for user interface.  
-
-
-
-## Installation
-
-1. Use pip to install BeautifulSoup and Urllib3 . 
-2. Download codes here.
-3. Run main.py
-4. Enjoy it !!!
-
-
-
-## Screen  Shots 
-
-![01](screen_shots/01.png)
-
-
-
-
-
-# 中文
+Email：s041516@apps.ntpc.edu.tw
 
 ## 說明
 
@@ -51,15 +16,15 @@ Use youtube-dl base to download,BeautifulSoup , request of Urllib3 for web crawl
 
 ## 特色
 
-使用youtube-dl來做為下載影片的工具，BeautifulSoup、Urllib內的request用來作為網路爬蟲的工具 ，以及Python 內建的 tkinter GUI 來製作圖形使用者介面。
+使用youtube-dl來做為下載影片的工具，BeautifulSoup、Urllib.request內的urlopen用來確認網址是否正確 ，以及Python 內建的 tkinter GUI 來製作圖形使用者介面。
 
-Use youtube-dl base to download,BeautifulSoup , request of Urllib3 for web crawler , And Python Default Tkinter GUI for user interface.  
+
 
 
 
 ## 安裝
 
-1. 使用pip 安裝工具安裝BeautifulSoup,Urllib3
+1. 使用pip 安裝工具安裝Urllib3
 2. 下載這裡的原始碼
 3. 執行main.py
 4. 可以開始使用了!!!

@@ -33,26 +33,28 @@ class Window():
                         bg='orange', fg='Black')
         self.btn.place(rely=0.75, relx=0.9, anchor='center')
 
-        self.choice_frm = tk.Frame(self.window, width=640, height=50)
-        self.choice_frm.pack()
+        # self.choice_frm = tk.Frame(self.window, width=640, height=50)
+        # self.choice_frm.pack()
 
-        self.lb = tk.Label(self.choice_frm, text='Quality品質 :',
-                    fg='black')
-        self.lb.place(rely=0.2, relx=0.1)
-        self.cbb = ttk.Combobox(self.choice_frm,
-                    values=[
-                        "720p",
-                        "480p",
-                        "360p"], state="readonly", width=12)
+        # self.lb = tk.Label(self.choice_frm, text='Quality品質 :',
+        #             fg='black')
+        # self.lb.place(rely=0.2, relx=0.1)
+        # self.cbb = ttk.Combobox(self.choice_frm,
+        #             values=[
+        #                 "720p",
+        #                 "480p",
+        #                 "360p"], state="readonly", width=12)
 
-        self.cbb.place(rely=0.2, relx=0.3)
-        self.cbb.current(0)
+        # self.cbb.place(rely=0.2, relx=0.3)
+        # self.cbb.current(0)
 
-        self.cbb.bind("<<ComboboxSelected>>", self.callbackFunc)
+        # self.cbb.bind("<<ComboboxSelected>>", self.callbackFunc)
 
         self.dl_frm = tk.Frame(self.window, width=640, height=280)
         self.dl_frm.pack()
 
+
+        # 下載清單
         self.lb = tk.Label(self.dl_frm, text='Download Message', font="none 12 bold")
         self.lb.place(rely=0.1, relx=0.5, anchor='center')
 
@@ -64,6 +66,7 @@ class Window():
 
         # l1 = tk.Label(window, text="Made by Roy Chuang ！ s041516@apps.ntpc.edu.tw",  font="none 12 bold")
         # l1.pack()
+
         self.listbox.insert(tk.END, '製作人:莊鎮宇 ！ s041516@apps.ntpc.edu.tw')
         self.listbox.insert(tk.END, '開發工具:Python,Pyinstaller')
         self.listbox.insert(tk.END, '開發模組:Pytube,tkinter,threading')
@@ -78,14 +81,20 @@ class Window():
         listbox.insert(tk.END, 'Selected' + cbb.get())
     
     def click(self):
+        self.download()
+
+    def download(self):
         print("下載影片")
+        download_playlist = messagebox.askquestion("是否下載播放清單","是否下載播放清單")
+        return download_playlist
+
 
     def mainloop(self):
         self.window.mainloop()
 
 def main():
     gui = Window()
-    gui.mainloop()
+    gui.window.mainloop()
 
 if __name__ == "__main__":
     main()
