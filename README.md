@@ -40,5 +40,9 @@ Email：s041516@apps.ntpc.edu.tw
 
 ![01](screen_shots/01.png)
 
+![01](screen_shots/02.png)
+
+![01](screen_shots/03.png)
+
 
 
