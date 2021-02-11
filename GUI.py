@@ -8,7 +8,6 @@ class Window():
         self.window.geometry("500x600")
         self.window.resizable(0, 0)
         self.window.wm_attributes("-topmost", 1)
-        # self.window.iconbitmap("YouTube_Icon_1.ico") # 更改圖示
         print("製作人:莊鎮宇 s041516@apps.ntpc.edu.tw")
         print("This is a python console這是一個Python主視窗")
         print("You can see all message here 你可以在這看到所有訊息")
@@ -33,22 +32,7 @@ class Window():
                         bg='orange', fg='Black')
         self.btn.place(rely=0.75, relx=0.9, anchor='center')
 
-        # self.choice_frm = tk.Frame(self.window, width=640, height=50)
-        # self.choice_frm.pack()
 
-        # self.lb = tk.Label(self.choice_frm, text='Quality品質 :',
-        #             fg='black')
-        # self.lb.place(rely=0.2, relx=0.1)
-        # self.cbb = ttk.Combobox(self.choice_frm,
-        #             values=[
-        #                 "720p",
-        #                 "480p",
-        #                 "360p"], state="readonly", width=12)
-
-        # self.cbb.place(rely=0.2, relx=0.3)
-        # self.cbb.current(0)
-
-        # self.cbb.bind("<<ComboboxSelected>>", self.callbackFunc)
 
         self.dl_frm = tk.Frame(self.window, width=640, height=280)
         self.dl_frm.pack()
@@ -68,8 +52,8 @@ class Window():
         # l1.pack()
 
         self.listbox.insert(tk.END, '製作人:莊鎮宇 ！ s041516@apps.ntpc.edu.tw')
-        self.listbox.insert(tk.END, '開發工具:Python,Pyinstaller')
-        self.listbox.insert(tk.END, '開發模組:Pytube,tkinter,threading')
+        self.listbox.insert(tk.END, '開發工具:Python')
+        self.listbox.insert(tk.END, '開發模組:Urllib3,youtube-dl,tkinter,threading')
         self.listbox.insert(tk.END, '新功能:同時下載多個影片檔')
         self.listbox.insert(tk.END, '注意:影片下載完成前，可能產生不完整(下載到一半)影片檔，請勿開啟')
         self.listbox.insert(tk.END, '注意:如中途網路中斷或關閉程式可能殘留未完成影片檔，將其刪除即可')
@@ -88,6 +72,8 @@ class Window():
         download_playlist = messagebox.askquestion("是否下載播放清單","是否下載播放清單")
         return download_playlist
 
+    def no_url(self):
+        messagebox.showerror("請檢察網址是否正確或網路連線是否正常","請檢察網址是否正確或網路連線是否正常")
 
     def mainloop(self):
         self.window.mainloop()

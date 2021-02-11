@@ -25,8 +25,13 @@ Email：s041516@apps.ntpc.edu.tw
 ## 安裝
 
 1. 使用pip 安裝工具安裝Urllib3
+
+   `pip install urllib3`
+
 2. 下載這裡的原始碼
+
 3. 執行main.py
+
 4. 可以開始使用了!!!
 
 
