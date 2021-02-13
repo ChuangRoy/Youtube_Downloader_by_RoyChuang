@@ -4,7 +4,8 @@ def download(url,download_playlist):
         download_cmd = "--yes-playlist "
     else:
         download_cmd = "--no-playlist "
-    CMD = "youtube-dl " + download_cmd + url
+    CMD = "youtube-dl " + download_cmd + ' " '  + url + ' " '
+    print(CMD)
     os.system(CMD)
 
 if __name__ == "__main__":

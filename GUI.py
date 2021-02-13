@@ -54,12 +54,12 @@ class Window():
         self.listbox.insert(tk.END, '製作人:莊鎮宇 ！ s041516@apps.ntpc.edu.tw')
         self.listbox.insert(tk.END, '開發工具:Python')
         self.listbox.insert(tk.END, '開發模組:Urllib3,youtube-dl,tkinter,threading')
-        self.listbox.insert(tk.END, '新功能:同時下載多個影片檔')
         self.listbox.insert(tk.END, '注意:影片下載完成前，可能產生不完整(下載到一半)影片檔，請勿開啟')
         self.listbox.insert(tk.END, '注意:如中途網路中斷或關閉程式可能殘留未完成影片檔，將其刪除即可')
         self.listbox.insert(tk.END, '即將推出下載播放清單功能，敬請期待')
         self.listbox.insert(tk.END, '----------------------------------------------------------------------------------')
-
+    def insert_text(self, words):
+        self.listbox.insert(tk.END, words)
 
     def callbackFunc(self, event):
         listbox.insert(tk.END, 'Selected' + cbb.get())
