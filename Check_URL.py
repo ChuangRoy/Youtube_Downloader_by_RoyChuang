@@ -4,15 +4,15 @@ from sys import exit
 
 def Check_Url(url):
     try:
+        print("")
         print("檢查網址")
         # threading.Thread(target=urlopen(url)).start()
         urlopen(url)
     except:
         return False
     else :
-        return True
         print("網址正確")
-    
+        return True    
     exit()
 
 if __name__ == "__main__":

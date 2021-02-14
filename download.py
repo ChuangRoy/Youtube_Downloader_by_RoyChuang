@@ -7,6 +7,7 @@ def download(url,download_playlist):
     CMD = "youtube-dl " + download_cmd + ' " '  + url + ' " '
     print(CMD)
     os.system(CMD)
+    
 
 if __name__ == "__main__":
     download("https://www.youtube.com/watch?v=rMlk97ecKUw",False)
