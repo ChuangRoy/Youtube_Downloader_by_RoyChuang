@@ -4,7 +4,6 @@ import Check_URL
 import threading
 import tkinter as tk
 from tkinter import messagebox, ttk
-
 class main(GUI.Window):
     def __init__(self):
         print("Started!")
@@ -35,6 +34,7 @@ class main(GUI.Window):
             self.no_url()
     def mainloop(self):
         self.window.mainloop()
+
 
 Main = main()
 Main.mainloop()
