@@ -14,7 +14,10 @@ class Window():
         print("Please Don't close this window 請勿關閉此視窗")
         print("=====================================================================================")
         # 顯示YouTube圖片
-        self.Icon1 = tk.PhotoImage(file = "YouTube_Icon_1.png")
+        import os 
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        # print(dir_path)
+        self.Icon1 = tk.PhotoImage(file = dir_path + "\\" "YouTube_Icon_1.png")
         self.Image_Lable1 = tk.Label(self.window,image = self.Icon1)
         self.Image_Lable1.pack()
         # 設定網址輸入區域
