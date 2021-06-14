@@ -18,9 +18,9 @@ Email：s041516@apps.ntpc.edu.tw
 
 ## 安裝
 
-1. 使用pip 安裝工具安裝Urllib3
+1. 使用pip 安裝工具安裝Urllib3,Beautifulsoup,requests,pytube
 
-   `pip install urllib3`
+   `pip install urllib3 requests pytube`
 
 2. 下載這裡的原始碼
 

@@ -65,7 +65,9 @@ class Window():
     
     def click(self):
         self.download()
-
+        
+    def download(self):
+        print("下載影片")
     def download_ask(self):
         print("下載影片")
         download_playlist = messagebox.askquestion("是否下載播放清單","是否下載播放清單")
