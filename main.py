@@ -57,8 +57,8 @@ class main(GUI.Window):
 #             threading.Thread.__init__(self, *args, **kwargs)
 #             self.daemon = True
 #             self.start()
-#             self.Main = Main
 #     def run(self):
+#             self.Main = Main
 #         while True :
 #             # self.Main.window.update()
 #             # self.Main.window.update_idletasks()
